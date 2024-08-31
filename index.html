@@ -211,6 +211,19 @@
                 document.getElementById('countdown').style.backgroundColor = 'black';
             }
         });
+
+        function createDot() {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            dot.style.left = `${Math.random() * 100}vw`;
+            document.body.appendChild(dot);
+
+            setTimeout(() => {
+                dot.remove();
+            }, 5000);
+        }
+
+        setInterval(createDot, 100);
     </script>
 </body>
 </html>
