@@ -145,6 +145,36 @@
             list-style-type: disc;
             margin-left: 20px;
         }
+        .nav-buttons {
+            position: fixed;
+            top: 40px; /* Adjust this value to position the buttons below the marquee */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 101;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 20px;
+        }
+        .nav-buttons button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 14px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-buttons button:hover {
+            background-color: #555;
+        }
+        .content {
+            margin-top: 120px;
+            margin-bottom: 100px;
+        }
     </style>
 </head>
 <body>
@@ -168,10 +198,10 @@
         </div>
     </div>
 
-    <div class="nav-menu">
-        <a href="#home" onclick="showHome()">Home</a>
-        <a href="#about" onclick="showAbout()">About</a>
-        <a href="#service">Service</a>
+    <div class="nav-buttons">
+        <button onclick="showHome()">Home</button>
+        <button onclick="showAbout()">About</button>
+        <button onclick="showService()">Service</button>
     </div>
 
     <div id="home-page" class="content">
@@ -413,6 +443,10 @@
         function showAbout() {
             document.getElementById('home-page').style.display = 'none';
             document.getElementById('about-page').style.display = 'block';
+        }
+        function showService() {
+            // Implement this function when you add a service page
+            alert('Service page coming soon!');
         }
     </script>
 </body>
