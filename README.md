@@ -1,6 +1,6 @@
 # VendorHub
 
-![VendorHub Logo](https://i.imgur.com/ypw1hn6.png)
+![VendorHub Logo](https://imgur.com/a/uhsJcoy)
 
 ## About VendorHub
 
