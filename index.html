@@ -129,6 +129,34 @@
         #backToTopBtn:hover {
             background-color: #555;
         }
+        .nav-menu {
+            background-color: #222;
+            padding: 10px 0;
+            position: fixed;
+            top: 30px; /* Adjust this value to position the menu below the marquee */
+            left: 0;
+            right: 0;
+            z-index: 99;
+            text-align: center;
+        }
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            background-color: #444;
+        }
+
+        /* Adjust the content top margin to accommodate the new nav menu */
+        .content {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
     </style>
 </head>
 <body>
@@ -152,8 +180,15 @@
         </div>
     </div>
 
+    <div class="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#service">Service</a>
+    </div>
+
     <div class="content">
-        <h1>Vendorhub</h1>
+        <h2>Vendorhub</h2>
+        <h1>Home</h1>
         <table>
             <tr>
                 <th>Item</th>
