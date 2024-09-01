@@ -1,6 +1,6 @@
 # VendorHub
 
-![VendorHub Logo](path/to/your/logo.png)
+![VendorHub Logo](favicon/favicon.ico)
 
 ## About VendorHub
 
