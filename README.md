@@ -1,5 +1,7 @@
 # VendorHub
 
+![Vendorhub Icon](https://github.com/EliteCronax/vendorhub/blob/main/favicon/favicon.ico)
+
 ## About VendorHub
 
 VendorHub is your go-to platform for all things reselling. We're passionate about empowering resellers and making the process as smooth and profitable as possible - all for free!
