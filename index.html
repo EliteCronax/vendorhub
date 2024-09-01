@@ -98,7 +98,15 @@
             }
         }
         .spacer {
-            height: 5000px; /* Adjust this value to increase or decrease scrolling distance */
+            height: 1000px; /* Adjust this value to increase or decrease scrolling distance */
+        }
+        .footer {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 14px;
+            color: #888;
+            z-index: 1000;
         }
     </style>
 </head>
@@ -235,6 +243,10 @@
     <div class="spacer"></div>
 
     <div id="countdown"></div>
+
+    <div class="footer">
+        Made with ❤️ by Cron
+    </div>
 
     <script>
         // Countdown timer
