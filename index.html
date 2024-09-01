@@ -109,6 +109,25 @@
             color: #888;
             z-index: 1000;
         }
+        #backToTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+            transition: opacity 0.3s;
+        }
+        #backToTopBtn:hover {
+            background-color: #555;
+        }
     </style>
 </head>
 <body>
@@ -300,6 +319,27 @@
         }
 
         setInterval(createDot, 100);
+
+        <button id="backToTopBtn" title="Go to top">Back to Top ↑</button>
+
+    <script>
+        
+        // Back to Top button functionality
+        const backToTopBtn = document.getElementById("backToTopBtn");
+        const table = document.querySelector("table");
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > table.offsetTop + table.offsetHeight || document.documentElement.scrollTop > table.offsetTop + table.offsetHeight) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+
+        backToTopBtn.addEventListener("click", function() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        });
     </script>
 </body>
 </html>
